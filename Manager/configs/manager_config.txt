@@ -1,0 +1,14 @@
+INPUT_FILE = Manager/test/img.bmp
+OUTPUT_FILE = Manager/test/coded_and_decoded_with_two_execs.bmp
+
+READER_NAME = com.pipeline.Reader
+WRITER_NAME = com.pipeline.Writer
+# Экзекьюторы расставляются на конвейере в том порядке, в котором указаны
+EXECUTORS_NAMES = com.pipeline.Executor, com.java_polytech.pipeline.ACExecutor, com.java_polytech.pipeline.ACExecutor, com.pipeline.Executor
+
+READER_CONFIG = Manager/configs/reader_config.txt
+# Порядок конфигов экзекьютеров должен соответствовать порядку экзекьютеров
+EXECUTORS_CONFIGS = Manager/configs/RLEConfEnc.txt, Manager/configs/ACConfEnc.txt, Manager/configs/ACConfDec.txt, Manager/configs/RLEConfDec.txt
+WRITER_CONFIG = Manager/configs/writer_config.txt
+
+LOG_FILE = Manager/log.txt

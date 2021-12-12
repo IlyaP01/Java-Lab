@@ -1,0 +1,2 @@
+MODE = decode
+OUT_BUFFER_SIZE = 341

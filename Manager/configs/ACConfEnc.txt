@@ -1,0 +1,2 @@
+MODE = encode
+OUT_BUFFER_SIZE = 500
